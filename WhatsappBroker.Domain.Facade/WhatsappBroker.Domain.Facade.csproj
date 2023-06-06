@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WhatsappBroker.Domain.Models\WhatsappBroker.Domain.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="ChatbotProject.Common.Domain.Models">
+        <HintPath>..\..\..\..\..\..\home\aced\.nuget\packages\chatbotproject.common.domain.models\0.4.1\lib\net6.0\ChatbotProject.Common.Domain.Models.dll</HintPath>
+      </Reference>
+      <Reference Include="RabbitMQ.Client.Core.DependencyInjection">
+        <HintPath>..\..\..\..\..\..\home\aced\.nuget\packages\rabbitmq.client.core.dependencyinjection\5.0.0\lib\netstandard2.1\RabbitMQ.Client.Core.DependencyInjection.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

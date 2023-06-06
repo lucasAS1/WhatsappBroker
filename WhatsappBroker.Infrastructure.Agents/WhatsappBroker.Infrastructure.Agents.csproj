@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>WhatsappBroker.Infrastructure.Interfaces</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Class1.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="ChatbotProject.Common.Domain.Models">
+        <HintPath>..\..\..\..\..\..\home\aced\.nuget\packages\chatbotproject.common.domain.models\0.4.1\lib\net6.0\ChatbotProject.Common.Domain.Models.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.Extensions.Options">
+        <HintPath>..\..\..\..\..\..\home\aced\.dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.16\ref\net6.0\Microsoft.Extensions.Options.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WhatsappBroker.Domain.Models\WhatsappBroker.Domain.Models.csproj" />
+      <ProjectReference Include="..\WhatsappBroker.Utilities.Constants\WhatsappBroker.Utilities.Constants.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Flurl.Http" Version="3.2.4" />
+      <PackageReference Include="Flurl.Serialization.TextJson" Version="3.1.0" />
+      <PackageReference Include="Polly" Version="7.2.3" />
+    </ItemGroup>
+
+</Project>
